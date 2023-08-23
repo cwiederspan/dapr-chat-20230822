@@ -21,14 +21,14 @@ namespace DaprChat.WebApi.Controllers {
             return "Hello from ChatController!";
         }
 
-        [HttpPost]
-        public async Task<string> Post(Guid? id, string prompt) {
+        [HttpPost("{id:Guid}")]
+        public async Task<string> Post(Guid? id, Prompt prompt) {
 
             id = id ?? Guid.NewGuid();
 
             var proxy = ActorProxy.Create<IChatActor>(new ActorId(id.ToString()), "ChatActor");
 
-            var response = await proxy.Chat(new Prompt(prompt));
+            var response = await proxy.Chat(prompt);
 
             return response;
         }
