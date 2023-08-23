@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaprChat.WebApi", "DaprChat.WebApi.csproj", "{506DC6DA-34E2-460D-B96C-1B4D38661277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{506DC6DA-34E2-460D-B96C-1B4D38661277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506DC6DA-34E2-460D-B96C-1B4D38661277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506DC6DA-34E2-460D-B96C-1B4D38661277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506DC6DA-34E2-460D-B96C-1B4D38661277}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96ACBF78-EA31-4A86-A45E-10C5194922F3}
+	EndGlobalSection
+EndGlobal

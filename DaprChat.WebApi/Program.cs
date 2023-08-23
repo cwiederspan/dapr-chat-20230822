@@ -1,8 +1,11 @@
 using DaprChat.WebApi.Actors;
 
+using DaprChat.WebApi.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<IChatService, ChatService>();
 
 builder.Services.AddControllers();
 

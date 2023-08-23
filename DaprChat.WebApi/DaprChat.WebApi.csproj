@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Dapr.Actors.AspNetCore" Version="1.11.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="0.20.230821.4-preview" />
+    <!-- <PackageReference Include="Microsoft.SemanticKernel.Skills.OpenAPI" Version="0.20.230821.4-preview" /> -->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 

@@ -31,6 +31,17 @@
                 "${workspaceFolder}/DaprChat.WebApi/DaprChat.WebApi.csproj"
             ],
             "problemMatcher": "$tsc"
+        },
+        {
+            "appId": "myapp",
+            "appPort": 5000,
+            "label": "dapr-debug",
+            "type": "dapr"
+        },
+        {
+            "appId": "myapp",
+            "label": "daprd-down",
+            "type": "daprd-down"
         }
     ]
 }

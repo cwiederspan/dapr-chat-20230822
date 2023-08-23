@@ -9,8 +9,22 @@
             "type": "coreclr",
             "request": "launch",
             "program": "dotnet",
-            "args": ["run"],
+            "args": [
+                "run"
+            ],
+            "cwd": "${workspaceFolder}/DaprChat.WebApi"
+        },
+        {
+            "name": ".NET Core Launch (web) with Dapr",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": [
+                "run"
+            ],
             "cwd": "${workspaceFolder}/DaprChat.WebApi",
+            "preLaunchTask": "dapr-debug",
+            "postDebugTask": "daprd-down"
         }
     ]
 }
