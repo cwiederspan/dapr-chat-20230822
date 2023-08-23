@@ -5,7 +5,7 @@ namespace DaprChat.WebApi.Actors {
 
     public interface IChatActor : IActor {
 
-        Task<string> Chat(/*string prompt*/);
+        Task<string> Chat(Prompt prompt);
     }
 
     public class ChatActor : Actor, IChatActor {
@@ -14,9 +14,7 @@ namespace DaprChat.WebApi.Actors {
 
         }
 
-        public async Task<string> Chat(/*string prompt*/) {
-
-            string prompt = "Testing!!!";
+        public async Task<string> Chat(Prompt prompt) {
 
             string id = this.Id.GetId();
 
@@ -25,7 +23,7 @@ namespace DaprChat.WebApi.Actors {
             //// Set State using StateManager, state is saved after the method execution.
             //await this.StateManager.SetStateAsync<MyData>(StateName, data);
 
-            return await Task.FromResult($"Actor {id} says: {prompt}");
+            return await Task.FromResult($"Actor {id} says: {prompt.Content}");
         }
     }
 }
